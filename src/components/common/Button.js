@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 
-const Button = () => {
+const Button = (props) => {
   return (
-    <TouchableOpacity>
-      <Text></Text>
+    <TouchableOpacity style={styles.buttonStyle}>
+      <Text style={styles.textStyle}>{props.children}</Text>
     </TouchableOpacity>
   )
 }
@@ -14,7 +14,11 @@ const styles = {
     borderWidth : 1,
     borderColor : "#007aff",
     borderRadius : 10
+  },
+  textStyle : {
+    fontSize : 16,
+    fontColor : "#111E9C"
   }
 }
 
-export default Button;
+export { Button };
