@@ -3,17 +3,18 @@ import { View, Text } from 'react-native';
 
 const Card = (props) => {
   return (
-    <View>
-      {this.children}
+    <View style={styles.containerStyle}>
+      {props.children}
     </View>
   )
 }
 
 const styles = {
   containerStyle : {
-    padding : 5,
-    borderColor : '#89EB37',
-    margin : 5
+    borderWidth : 1,
+    borderRadius : 10,
+    margin : 5,
+    backgroundColor : '#ffffff'
   }
 }
 
